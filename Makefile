@@ -1,21 +1,20 @@
 
 VPATH = looks sections references figures
-OUTDIR = output
+
 TEXTDIR = sections
+REFDIR = references
 
 frontmatter = $(TEXTDIR)/frontmatter.yaml
 markdown = abstract.md introduction.md methods.md \
 		results.md discussion.md references.md 
 text = $(addprefix $(TEXTDIR)/, $(markdown))
-bibfile = references/references.bib
-cslfile = references/evolution.csl
+bibfile = $(REFDIR)/references.bib
+cslfile = $(REFDIR)/evolution.csl
 commonfiles = $(frontmatter) $(text) $(bibfile) $(cslfile)
 
 looks_latex = looks/looks.yaml
 looks_docx = looks/looks.docx
 looks_css = looks/looks.css
-
-
 
 
 manuscript.pdf : $(commonfiles) $(looks_latex) 
