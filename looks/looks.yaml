@@ -1,0 +1,12 @@
+---
+documentclass: scrartcl
+
+margin-left: 1in
+margin-right: 1in
+margin-top: 1.25in
+margin-bottom: 1.25in
+
+mainfont: Palatino
+sansfont: Helvetica
+fontsize: 11 pt
+...
