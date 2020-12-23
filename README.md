@@ -7,7 +7,9 @@ manuscript.docx).
 ## Requirements
 
 * pandoc
-* python3 (+ snakemake)
+* python3 (+ snakemake, manubot)
+    * `pip install snakemake` 
+    * `pip install manubot` 
 
 ## Notes
 
